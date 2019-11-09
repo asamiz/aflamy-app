@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_pastel"
+    >
+    </View>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@android:dimen/thumbnail_height"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/action_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="UXBERT Usability Lab,\n Project Sami"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/primary_white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>

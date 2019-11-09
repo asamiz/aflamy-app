@@ -1,9 +1,7 @@
-const Fonts = {
+export const Fonts = {
     h1: {
         fontSize: 30,
         lineHeight: 48,
-        fontFamily: 'Overpass'
+        fontFamily: 'Overpass-Light'
     }
 }
-
-export default Fonts

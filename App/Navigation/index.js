@@ -1,16 +1,35 @@
+import React from 'react'
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs'
+import { createAppContainer } from 'react-navigation';
 import { FavoriteScreen, SearchScreen } from '../Screens'
+import { Colors } from '../../App/Constants'
+import { IconView } from '../../App/Components'
 
-export default createMaterialBottomTabNavigator(
-    {
-        Search: { screen: SearchScreen },
-        Favorite: { screen: FavoriteScreen },
+const mainStack = createMaterialBottomTabNavigator(
+  {
+    Favorite: {
+      screen: FavoriteScreen,
+      navigationOptions: {
+        tabBarIcon: ({ tintColor }) =>
+          <IconView size={23} iconStyle={{ color: tintColor }} name={'heart'} />
+      }
     },
-    {
-        initialRouteName: 'Search',
-        activeColor: '#f0edf6',
-        inactiveColor: '#3e2465',
-        barStyle: { backgroundColor: '#694fad' },
-    }
+    Search: {
+      screen: SearchScreen,
+      navigationOptions: {
+        tabBarIcon: ({ tintColor }) =>
+          <IconView size={23} iconStyle={{ color: tintColor }} name={'search1'} />
+      }
+    },
+  },
+  {
+    initialRouteName: 'Favorite',
+    activeColor: Colors.orange,
+    inactiveColor: Colors.oxfordBlue,
+    barStyle: {
+      backgroundColor: Colors.white
+    },
+  },
 )
 
+export default () => createAppContainer(mainStack)

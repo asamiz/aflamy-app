@@ -1,7 +1,15 @@
-import React from 'react';
-import { createAppContainer } from 'react-navigation';
-import Navigator from './Navigation';
+import React, { useEffect } from 'react'
+import SplashScreen from 'react-native-splash-screen'
+import MainStackCreator from './Navigation'
 
-const App = createAppContainer(Navigator);
+export default App = () => {
+    useEffect(() => {
+        SplashScreen.hide()
+    }, [])
 
-export default App;
+    const MainStack = MainStackCreator()
+    return <MainStack />
+
+}
+
+

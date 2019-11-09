@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_orange">#E0702A</color>
+    <color name="status_bar_color">#E27A39</color>
+    <color name="primary_pastel">#E27A39</color>
+    <color name="primary_white">#fff</color>
+</resources>
