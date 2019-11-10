@@ -11,7 +11,7 @@ const mainStack = createMaterialBottomTabNavigator(
       screen: FavoriteScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) =>
-          <IconView size={23} iconStyle={{ color: tintColor }} name={'heart'} />
+          <IconView size={23} iconStyle={{ color: tintColor }} name={'heart'} />,
       }
     },
     Search: {
@@ -25,9 +25,9 @@ const mainStack = createMaterialBottomTabNavigator(
   {
     initialRouteName: 'Favorite',
     activeColor: Colors.orange,
-    inactiveColor: Colors.oxfordBlue,
+    inactiveColor: Colors.white,
     barStyle: {
-      backgroundColor: Colors.white
+      backgroundColor: Colors.darkGrey
     },
   },
 )

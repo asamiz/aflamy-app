@@ -5,5 +5,8 @@ export const Colors = {
   crimson: '#AC0631',
   jet: '#333333',
   white: '#ffff',
+  black: '#090909',
+  darkGrey: '#222',
+  lightGrey: '#909090'
 }
 
