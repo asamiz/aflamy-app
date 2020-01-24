@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        android:text="UXBERT Usability Lab,\n Project Sami"
+        android:text="XCompany Usability Lab,\n Project Sami"
         android:gravity="center"
         android:textAlignment="center"
         android:textColor="@color/primary_white"

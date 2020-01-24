@@ -97,7 +97,7 @@ export default Search = props => {
             <FlatList
               data={data}
               renderItem={_renderItem}
-              contentContainerStyle={{ paddingVertical: 16 }}
+              contentContainerStyle={Styles.container}
               keyExtractor={item => item.id + ''}
               showsVerticalScrollIndicator={false}
               ItemSeparatorComponent={_itemSeparator}
